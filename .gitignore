@@ -1,1 +1,4 @@
 env/
+APIProject/APIProject/__pycache__
+APIProject/db.sqlite3
+APIProject/api/migrations
