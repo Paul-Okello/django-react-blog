@@ -1,7 +1,9 @@
 from django.urls import  path
-from .views import article_list
+from . import views
+
 
 urlpatterns = [
-    path('articles/', article_list
-    )
+    path("articles/", views.ArticleList.as_view()),
+    path("articles/<int:id>/", views.ArticleDetails.as_view()),
 ]
+
